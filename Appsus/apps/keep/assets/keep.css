@@ -1,0 +1,178 @@
+/* ----------------------- Basics ----------------------------------- */
+
+h2 {
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+p {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+
+/* ---------------------- Page Layout ------------------------------- */
+
+.notes-container {
+    background-color: inherit;
+    /* height: 80vh; */
+    padding: 20px;
+}
+
+.notes-list {
+    max-width: 100%;
+}
+
+.pinned-notes-container {
+    width: 100vw;
+    background-color: white;
+    padding: 20px;
+    background-color: #3498db;
+    border-bottom: 1px solid white;
+}
+
+
+/* -------------------------- ADD Note ------------------------------ */
+
+.add-note-form {
+    background-color: inherit;
+    justify-self: center;
+    justify-items: center;
+    margin-top: 25px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.add-note-form input {
+    height: 40px;
+    font-size: inherit;
+    border-radius: 5px;
+    border: 1px;
+    padding-left: 5px;
+}
+
+.add-note-container {
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: linear-gradient(45deg, rgba(172, 197, 207, 1) 0%, rgba(41, 184, 229, 1) 52%, rgba(188, 224, 238, 1) 100%);
+}
+
+.types-container {
+    margin-top: 10px;
+}
+
+.types-container i {
+    color: white;
+    font-size: 1.3em;
+    transition: 0.6s;
+}
+
+
+/* ----------------------- Note Preview -------------------------- */
+
+.note-preview {
+    width: 350px;
+    max-width: 350px;
+    display: flex;
+    margin-bottom: 15px;
+    margin-inline-end: auto;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-family: 'Indie Flower', cursive;
+    opacity: 0.8;
+    transition: 0.2s;
+    margin-left: 10px;
+    align-self: stretch;
+    flex-grow: 1;
+    box-shadow: 4px 0px 5px 0px rgba(133, 101, 133, 1);
+    background-color: #ffffff;
+}
+
+.note {
+    border-radius: inherit;
+    padding: 10px;
+    height: 100%;
+}
+
+.img-note img {
+    width: 100%;
+}
+
+.note>* {
+    padding: 10px;
+}
+
+.note h2 {
+    border: 1px dashed transparent;
+}
+
+.note p {
+    border: 1px dashed transparent;
+}
+
+.note h3 {
+    padding: 10px;
+}
+
+.far.fa-paper-plane {
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+
+/* ----------------------------to do's ----------------------------------- */
+
+.todo-is-done {
+    text-decoration: line-through;
+}
+
+
+/* -------------------------- respopnsives -------------------------------- */
+
+.note:hover h2 {
+    border: 1px dashed;
+}
+
+.note:hover p {
+    border: 1px dashed;
+}
+
+.note:hover h3 {
+    cursor: pointer;
+}
+
+
+/* .note-preview:hover>.note-tools {
+    opacity: 1;
+} */
+
+.types-container i:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.types-container i:focus {
+    color: yellow;
+}
+
+.note:hover {
+    box-shadow: 4px 2px 5px 2px rgba(133, 101, 133, 1);
+    opacity: 1;
+}
+
+
+/* ----------------------- note tools --------------------------- */
+
+.note-tools {
+    justify-self: flex-end;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.note-tools li i {
+    font-size: 1.5em;
+    color: #0a3d62;
+    cursor: pointer;
+}

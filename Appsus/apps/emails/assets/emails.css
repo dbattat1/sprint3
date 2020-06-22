@@ -1,0 +1,290 @@
+/* -------------------------- EmailApp.jsx------------------------------ */
+
+.email-container {
+    margin-top: -41px;
+}
+
+
+/* -------------------------- EmailSearchBox.jsx------------------------------ */
+
+.email-search-box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+    margin-bottom: 51px;
+}
+
+.email-search-input {
+    width: 350px;
+    height: 35px;
+    border-radius: 11px;
+    border: 2px solid grey;
+    padding-left: 10px;
+    margin-left: 173px
+}
+
+
+/* -------------------------- SideNav.jsx------------------------------ */
+
+.side-nav {
+    width: 200px;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 4px 10px 9px 1px rgba(0, 0, 0, 0.75);
+}
+
+.new-mail-btn {
+    background: #fefefe;
+    padding: 10px 17px;
+    font-size: 1.3rem;
+    border-radius: 25px;
+    margin: 0 auto;
+    color: gray;
+    outline: none;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.new-mail-btn:hover {
+    box-shadow: 2px 1px 18px -3px rgba(0, 0, 0, 0.75);
+    color: #34a853;
+    font-weight: bolder;
+}
+
+.tray-btn {
+    margin-top: 20px;
+    line-height: 1.7
+}
+
+.tray-btn>* {
+    font-family: 'Hind Madurai', sans-serif;
+    padding-left: 20px;
+    font-weight: bolder;
+    color: #6a6868;
+    transition: 0.2s
+}
+
+.tray-btn a {
+    font-size: 1.2em;
+}
+
+.tray-btn>*:hover {
+    font-size: 1.3em;
+    color: #474646;
+}
+
+.email-nav-active {
+    background-color: rgb(196, 169, 169);
+}
+
+
+/* -------------------------- EmailCompose.jsx------------------------------ */
+
+.add-email-form {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.add-email-container {
+    width: 100%
+}
+
+.email-input-subject {
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.email-input-address {
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.email-input-body {
+    height: 350px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.send-email-btn {
+    margin-top: 10px;
+    width: 227px;
+    align-self: flex-start;
+    height: 53px;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 3px solid #636e72;
+    background-color: #74b9ff;
+    color: #636e72;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-email-btn:hover {
+    border: 3px solid white;
+    color: white;
+}
+
+
+/* -------------------------- EmailDetails.jsx------------------------------ */
+
+.email-details {
+    font-family: 'Hind Madurai', sans-serif;
+    flex: 1;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+.email-details-wrapper {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 5px 11px 0px rgba(112, 108, 112, 1);
+}
+
+.email-details-btns {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    background-color: #fff;
+    width: 100%;
+}
+
+.email-details-btns>* {
+    color: darkgray;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.email-details-btns>*:hover {
+    color: rgb(102, 98, 98);
+}
+
+.starred {
+    color: #f0c012;
+}
+
+.email-details-main {
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+    color: #222f3e;
+}
+
+.email-details-main h1 {
+    font-size: 2em;
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 25px;
+}
+
+.email-details-main h2 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.email-details-main p {
+    padding-top: 15px;
+}
+
+
+/* -------------------------- EmailList.jsx------------------------------ */
+
+.emails-inner-container {
+    flex-grow: 1;
+    padding: 30px
+}
+
+.emails-sort-btn {
+    width: 200px;
+    height: 40px;
+    align-self: center;
+    margin-top: -18px;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.6em;
+    color: #34495e;
+}
+
+.emails-list {
+    width: 100%;
+}
+
+.emails-list li {
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+
+/* -------------------------- EmailPreview.jsx------------------------------ */
+
+.unread-email {
+    background-color: #2d3436;
+    font-weight: bold;
+    color: #dfe6e9;
+    border: 2px solid white;
+    background-color: #f5f6fa;
+    color: #0c0c0e;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.read-email {
+    background-color: #c2c3c7c2;
+    color: #474c57;
+    border: 1px solid #c2c3c7;
+}
+
+.email-list-sender {
+    width: 40%;
+}
+
+.email-list-content {
+    width: 100%;
+}
+
+.preview-subject {
+    font-size: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.unread-email.preview-subject {
+    font-size: 1.5em;
+}
+
+.preview-body {
+    font-size: 0.6em;
+}
+
+.unread-email.preview-body {
+    font-size: 1.8em;
+}
+
+
+/* ---------------------------------BreakPoints----------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .side-nav {
+        width: 100vw;
+        height: 60px;
+        flex-direction: row;
+    }
+    .tray-btn {
+        /* flex-direction: column; */
+        flex-direction: row;
+    }
+}
